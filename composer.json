@@ -1,0 +1,32 @@
+{
+    "name": "coyote6/laravel-tenants",
+    "type": "library",
+    "description": "Provides helper classes and functions to build a tenant/landlord multi-site install.",
+    "keywords": ["laravel,tenants,landlord,multi-site"],
+    "homepage": "https://coyote6.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tanner Naeher",
+            "email": "tanner@coyote6.com",
+            "homepage": "https://coyote6.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+	    "webpatser/laravel-uuid" : "^4.0",
+	    "coyote6/laravel-base" : "^0.0",
+    },
+    "autoload": {
+        "psr-4": {
+            "Coyote6\\LaravelBase\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Coyote6\\LaravelTenants\\TenantsServiceProvider"
+            ]
+        },
+    }
+}
